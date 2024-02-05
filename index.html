@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-header">
+        <img src="img/DSCF6961-222.jpg" />
+      </div>
+
+      <div class="right-header">
+        <div class="header-text">
+          <h1 class="name">
+            Hi, I'm <span>Gini.</span><br />
+            This is my application of <span> WeHelp.</span>
+          </h1>
+        </div>
+        <div class="content">
+          <div id="intro" class="questions">
+            <div
+              class="question"
+              id="q1"
+              onmouseover="mouseOver(this)"
+              onmouseout="mouseOut(this)"
+              onclick="showAns1();"
+            >
+              <li>兩百字內的個人簡介。</li>
+            </div>
+            <div class="ques-title" id="q-t1" onclick="closeAns1();">
+              <li>兩百字內的個人簡介。</li>
+            </div>
+            <div class="answer" id="a1">
+              <p>
+                &emsp;&emsp;我是童俐，畢業於中興大學農藝系，
+                畢業後擔任國科會計畫助理一職，負責田間作物性狀調查、協助加工製程研發。
+                由於公家機關的工作內容較沒有挑戰性，學習機會也比較少，在國科會計畫結束後就決定轉職。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;學習程式讓我看到全新的世界，因為我本身有很多靜態的興趣，
+                攝影、繪畫、烹飪、園藝等，我發現寫程式能把我喜歡的事物都聚集在一起，
+                比如接下來我想串接 Google Maps 做一個咖啡廳地圖，
+                使用者能夠輕鬆找到符合需求的咖啡廳，也可以分享咖啡廳攝影、咖啡品評。
+              </p>
+              <br />
+              <span class="xmark">
+                <i
+                  class="fa-solid fa-circle-xmark fa-2xl"
+                  style="color: #4f5346"
+                  onclick="closeAns1();"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div id="side-project" class="questions">
+            <div
+              class="question"
+              id="q2"
+              onmouseover="mouseOver(this)"
+              onmouseout="mouseOut(this)"
+              onclick="showAns2();"
+            >
+              <li>
+                為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。
+              </li>
+            </div>
+            <div class="ques-title" id="q-t2" onclick="closeAns2();">
+              <li>
+                為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。
+              </li>
+            </div>
+            <div class="answer" id="a2">
+              <p>
+                &emsp;&emsp;一開始我先去了解軟體工程師是什麼，很幸運地，我身邊本來就有一些業界朋友，
+                本科生還是轉職者都有，在和他們聊天的過程中，我了解到工程師並不是輕輕鬆鬆就可以拿高薪的職業，
+                反倒是一直發現問題和解決問題的角色，同時還需要具備溝通能力、觀察力和抗壓性。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;成為一名前端工程師是我的轉職目標，因為我喜歡瀏覽美感與功能兼具的頁面，
+                而且許多生活中的問題是可以透過前端技術去解決的。
+                舉例來說，在使用蝦皮購物時，畫面繁雜又很多動態的廣告，且容易誤觸購物直播，
+                有時只是想買以前購買過的日用品，搜尋時卻要滑到很久以前的購物紀錄才找到曾經買過的商品或店家，
+                如果使用者頁面有更多可以自定的選項，線上購物就不需要花過多時間。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;去年五月，我開始學習
+                JavaScript、HTML、CSS，其實原本聽業界工作的朋友建議，
+                可以先看一些 React
+                的課程，但我以前從未有程式學習的經驗，嘗試後發現要先學習最基礎的程式語言，
+                於是就再從 HTML 開始一步一步學，看不懂的就在 MDN Web Docs
+                上找，或是詢問 ChatGPT，
+                前幾堂課就是邊看邊模仿，開了好幾個檔案在
+                VScode，後來才學到可以把 code 上傳 GitHub。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;期間我申請過兩次 AppWorks
+                School，但都在面試後收到感謝信。我繼續利用 Udemy 和 YouTube
+                觀看線上教學資源，透過當中的實作練習，增加 JavaScript、HTML、CSS
+                的熟練度，也確認自己觀念是否清晰，並持續練習切版和
+                RWD，同時完成個人網站作為一個 side project。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;目前個人網站是先放素材文字和圖片，未來如果有多一點自己的內容，會再將網站更新。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;個人網站：<a
+                  href="https://tli-gini.github.io/personal-website/"
+                  target="_blank"
+                  >https://tli-gini.github.io/personal-website/</a
+                >
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;去年九月，我進入自學的撞牆期，覺得自己不知道要如何跨到下一階段，進而求職。
+                於是我參加了台大資訊系統訓練班開的「JavaScript 與 React
+                網頁前端工程實務」，開課前我先用 React
+                官方教學網站嘗試完成圈圈叉叉小遊戲，對 React
+                的語法有個初步的認識。透過台大這門實體課，我學到除了
+                create-react-app 之外，如何用 Webpack 建立 React
+                的開發環境，而在課程中最大的收穫是認識並操作模組化的概念，
+                我覺得如果運用課程中學到的架構自己開發一個電商網站，並串接資料庫，就能夠從新手慢慢成為一名工程師。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;我使用 Rapid API 的 Youtube Search and Download
+                練習串接 API，我模仿 YouTube
+                主頁做了一個搜尋頁面，在搜尋列上打出影片的關鍵字或創作者，再點擊搜尋的按鍵，
+                就會出現影片、影片標題、創作者和觀看次數，可以點擊影片到影片連結觀看。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;YouTube API 串接：<a
+                  href="https://tli-gini.github.io/YouTube-Data-API/"
+                  target="_blank"
+                  >https://tli-gini.github.io/YouTube-Data-API/</a
+                >
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;現階段我在練習用 React 做一個購物網站，我使用 Rapid
+                API 上的 Real-Time Amazon Data 串接 Amazon
+                的商品資料庫，網頁畫面則是由我自己另行設計。
+                目前的進度是在做購物網站的登入系統，我希望自己可以在接下來兩個月內完成這個購物網站。
+              </p>
+              <br />
+              <span class="xmark">
+                <i
+                  class="fa-solid fa-circle-xmark fa-2xl"
+                  style="color: #4f5346"
+                  onclick="closeAns2();"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div id="schedule" class="questions">
+            <div
+              class="question"
+              id="q3"
+              onmouseover="mouseOver(this)"
+              onmouseout="mouseOut(this)"
+              onclick="showAns3();"
+            >
+              <li>如果參與這個訓練，會怎麼安排學習時間？</li>
+            </div>
+            <div class="ques-title" id="q-t3" onclick="closeAns3();">
+              <li>如果參與這個訓練，會怎麼安排學習時間？</li>
+            </div>
+            <div class="answer" id="a3">
+              <p>
+                &emsp;&emsp;如果有幸能參與 WeHelp
+                的訓練，我會視為是正職工作，並全職投入於其中。在第四屆說明會中，老師有提到要能夠接受一週
+                70 小時，相當於每天 10
+                小時的訓練，而且是任務制的，任務沒有完成不能進行下一階段。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;我會在週一接到任務後，先確認自己是否了解任務內容，
+                再來條列出執行這項任務有哪些困難，有哪些技術是我需要去自學補足。
+                接下來，確認已經有想法的部分所需時間多寡，就可以開始將任務切割為許多小目標，
+                這樣會讓自己比較有信心完成，最後依所需時間決定每天完成幾樣。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;例如：今日自學項目有哪些小目標、今日實作進度要完成哪些功能等。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;在執行過程中可能會遇到卡關太久，導致當日進度拖延的狀況，
+                所以一開始在時間安排上我不會將每個小目標排得太緊湊，
+                在進度允許的情況下，盡量在小目標之間有彈性時間得以緩衝。
+                我會盡最大的努力，在訓練的第一階段就調整出適合自己的解任務節奏。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;進入第二階段和第三階段後，我會參與實體活動，
+                因為我想把握住能和同學現場交流的機會，也想知道不同人解決問題的方式和想法。
+              </p>
+              <br />
+              <span class="xmark">
+                <i
+                  class="fa-solid fa-circle-xmark fa-2xl"
+                  style="color: #4f5346"
+                  onclick="closeAns3();"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div id="company" class="questions">
+            <div
+              class="question"
+              id="q4"
+              onmouseover="mouseOver(this)"
+              onmouseout="mouseOut(this)"
+              onclick="showAns4();"
+            >
+              <li>是否有想要加入的公司？為什麼想加入該公司？</li>
+            </div>
+            <div class="ques-title" id="q-t4" onclick="closeAns4();">
+              <li>是否有想要加入的公司？為什麼想加入該公司？</li>
+            </div>
+            <div class="answer" id="a4">
+              <p>&emsp;&emsp;Pinkoi 是我想要加入的公司。</p>
+              <br />
+              <p>
+                &emsp;&emsp;因為我很喜歡具有美感的事物，
+                我希望自己做出來的作品能給人舒適療癒的感受，當然，也要具備完善的功能性。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;我覺得 Pinkoi
+                相較於其他電商購物平台，更加重視獨特優美的設計。
+                我曾經使用過該公司的平台購買過禮物，瀏覽 Pinkoi
+                的網頁有一種溫馨舒適的感覺， 我覺得該公司十分重視使用者體驗。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;另外， Pinkoi
+                的網頁會特別強調創作者和品牌。比如會用很像 Instagram
+                的格式推薦創作者，使用者也可以自己選擇是否關注，畫面不會一般廣告那麼暴力突兀，
+                讓我覺得該公司除了重視消費者，也很尊重創作者。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;如果加入像 Pinkoi
+                這樣重視美觀和細節的公司，一定會面對到許多大大小小的挑戰。
+                因為我相信好用的平台不只需要經過不斷地修改與溝通，還要具備一定的專業技術。
+                但我覺得經過這些琢磨，更能夠成為一名成熟的工程師，
+                而且能參與開發經過精心設計的網頁，是一件榮幸又有成就感的事情。
+              </p>
+              <br />
+              <span class="xmark">
+                <i
+                  class="fa-solid fa-circle-xmark fa-2xl"
+                  style="color: #4f5346"
+                  onclick="closeAns4();"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div id="negative" class="questions">
+            <div
+              class="question"
+              id="q5"
+              onmouseover="mouseOver(this)"
+              onmouseout="mouseOut(this)"
+              onclick="showAns5();"
+            >
+              <li>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</li>
+            </div>
+            <div class="ques-title" id="q-t5" onclick="closeAns5();">
+              <li>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</li>
+            </div>
+            <div class="answer" id="a5">
+              <p>
+                &emsp;&emsp;在結束國科會計畫的工作後，我當了一年的學士後中醫考生，
+                每天早上去補習班和一群考生一起上課、討論，晚上複習所學並整理。
+                我的朋友們都在上班，雖然有幾個假日有和他們出去放鬆，但絕大部分的時候，我都是按著自己的排程操課。
+                就這樣盡全力穩住心態和培養習慣持續一年，我也是在這一年，才認識到自己原來可以堅持一件事這麼久。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;很不幸的是，最後我落榜了，當時心情真的很失落，
+                我覺得自己拚了一年卻只有一場空，我也對自己產生許多懷疑和不自信。
+                在經歷明顯負面情緒時，我選擇先冷靜，我告訴自己還年輕，光這一點就已經足夠幸運才對。
+                當時我找了人生中重要的人聊聊，這樣可以幫助我理性思考，思考自己擁有什麼，釐清自己下一步可以做什麼。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;我覺得面對負面情緒若能夠先讓自己冷靜，並分析利弊，就已經好一半了。
+                雖然當時心情沒辦法馬上變好，但我冷靜後分析自己的情況，為什麼我要考中醫？
+                因為我覺得和自己本科系有相關，且可以終身學習，不是像在公家機關，每天都在做重複的事情。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;和重要的人聊聊、分析後，我發現我真正想要的是一份可以終身學習、帶給我成就感的工作，
+                於是我決定先跳脫相關科系的框架，開始學習寫程式，我也在這件事上重新認識自己。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;我處理情緒的方式，是先讓自己冷靜，並和重要的人聊聊，避免讓自己陷入情緒漩渦而停滯不前。
+                再來思考自己心情低落的根本原因，分析自己擁有的資源和優勢，最後抓住可以控制的事情，重新出發。
+              </p>
+              <br />
+              <span class="xmark">
+                <i
+                  class="fa-solid fa-circle-xmark fa-2xl"
+                  style="color: #4f5346"
+                  onclick="closeAns5();"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div id="myWebsite" class="questions">
+            <div
+              class="question"
+              id="q6"
+              onmouseover="mouseOver(this)"
+              onmouseout="mouseOut(this)"
+              onclick="showAns6();"
+            >
+              <li>關於這份申請網頁，分享一個開發時的技術心得。</li>
+            </div>
+            <div class="ques-title" id="q-t6" onclick="closeAns6();">
+              <li>關於這份申請網頁，分享一個開發時的技術心得。</li>
+            </div>
+            <div class="answer" id="a6">
+              <p>
+                &emsp;&emsp;這份申請網頁是用 HTML、SCSS、 JavaScript
+                寫的，雖然最近在練習套框架，但還不太熟悉，我覺得在畫面不複雜的情況下，
+                直接用 HTML
+                寫能讓我在調整畫面時更直覺，而且這是我第一次自己從零設計畫面，
+                flexbox 還需要邊做邊調整。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;我覺得畫面如果只有題目跟答案會很像在看 Word
+                檔，有點單調乏味，所以將題目設計成可以將文字內容收放的按鈕。我寫了可以點開答案的函式
+                showAns ()，和可以收起答案的函式 closeAns ()，利用切換 CSS 的
+                display，達成文字內容收放的效果。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;其實這部分我卡關了一段時間，因為 closeAns ()
+                一直沒有成功收起答案，我也有用 console.log () 測試過，確定 code
+                有跑完，還去翻了以前做過的練習、問
+                ChatGPT，確定函式沒有問題，後來才發現是 showAns ()
+                沒有放到對的位置，才導致可以點開卻不能關。經過這個過程，我學到要認知清楚
+                HTML 的結構，呈現畫面若和想像的不一樣，不一定是函式要修正。
+              </p>
+              <br />
+              <span class="xmark">
+                <i
+                  class="fa-solid fa-circle-xmark fa-2xl"
+                  style="color: #4f5346"
+                  onclick="closeAns6();"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div id="relationship" class="questions">
+            <div
+              class="question"
+              id="q7"
+              onmouseover="mouseOver(this)"
+              onmouseout="mouseOut(this)"
+              onclick="showAns7();"
+            >
+              <li>
+                請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。
+              </li>
+            </div>
+            <div class="ques-title" id="q-t7" onclick="closeAns7();">
+              <li>
+                請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。
+              </li>
+            </div>
+            <div class="answer" id="a7">
+              <p>
+                &emsp;&emsp;「互相」是我覺得最重要的人際交往原則，因為每個人有不同的特質和狀況，
+                「互相」可以加強人與人相處的信任感，形成人際關係的正循環。
+              </p>
+              <br />
+              <span class="xmark">
+                <i
+                  class="fa-solid fa-circle-xmark fa-2xl"
+                  style="color: #4f5346"
+                  onclick="closeAns7();"
+                ></i>
+              </span>
+            </div>
+          </div>
+          <div id="other" class="questions">
+            <div
+              class="question"
+              id="q8"
+              onmouseover="mouseOver(this)"
+              onmouseout="mouseOut(this)"
+              onclick="showAns8();"
+            >
+              <li>其他想要對我們說的事情？</li>
+            </div>
+            <div class="ques-title" id="q-t8" onclick="closeAns8();">
+              <li>其他想要對我們說的事情？</li>
+            </div>
+            <div class="answer" id="a8">
+              <p>
+                &emsp;&emsp;其實原本對於 WeHelp 全遠端的訓練方式感到疑惑，
+                因為我有認識 Appworks School 的校友，也曾申請過 Appworks School
+                的培訓， 知道他們的訓練方式是每天到固定的訓練地點打卡，
+                所以我很訝異 WeHelp
+                還沒有辦很多屆，全遠端的訓練成果卻也十分優秀。
+                後來我認真思考後覺得，培訓班就是訓練自學還有解決問題的能力，
+                訓練成果如何，最重要的關鍵還是自己。
+                而且現在也有很多職缺是遠端的，讓自己只要有一台電腦就能工作，我相信是軟體工程師的必備技能。
+              </p>
+              <br />
+              <p>
+                &emsp;&emsp;我也有一位朋友是 WeHelp
+                的校友，他在第二階段培訓結束後就找到工作了，
+                在和他聊轉職過程時，他大方的跟我說：「我能走到今天是因為我真的很努力。」
+                我很佩服能夠問心無愧地說出這句話的人，我也希望有一天，我能夠成為這樣的人。
+                最後，我很謝謝 WeHelp 給我一個申請培訓的機會，希望我也能加入
+                WeHelp，成為 WeHelp 的校友，並成為軟體圈正循環的一員。
+              </p>
+              <br />
+              <span class="xmark">
+                <i
+                  class="fa-solid fa-circle-xmark fa-2xl"
+                  style="color: #4f5346"
+                  onclick="closeAns8();"
+                ></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
