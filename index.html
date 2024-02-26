@@ -40,11 +40,15 @@
               id="q1"
               onmouseover="mouseOver(this)"
               onmouseout="mouseOut(this)"
-              onclick="showAns1();"
+              onclick="showAns([a1, qt1], [q1]);"
             >
               <li>兩百字內的個人簡介。</li>
             </div>
-            <div class="ques-title" id="q-t1" onclick="closeAns1();">
+            <div
+              class="ques-title"
+              id="q-t1"
+              onclick="closeAns([q1],[a1, qt1]);"
+            >
               <li>兩百字內的個人簡介。</li>
             </div>
             <div class="answer" id="a1">
@@ -65,7 +69,7 @@
                 <i
                   class="fa-solid fa-circle-xmark fa-2xl"
                   style="color: #4f5346"
-                  onclick="closeAns1();"
+                  onclick="closeAns([q1],[a1, qt1]);"
                 ></i>
               </span>
             </div>
@@ -76,13 +80,17 @@
               id="q2"
               onmouseover="mouseOver(this)"
               onmouseout="mouseOut(this)"
-              onclick="showAns2();"
+              onclick="showAns([a2, qt2], [q2]);"
             >
               <li>
                 為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。
               </li>
             </div>
-            <div class="ques-title" id="q-t2" onclick="closeAns2();">
+            <div
+              class="ques-title"
+              id="q-t2"
+              onclick="closeAns([q2],[a2, qt2]);"
+            >
               <li>
                 為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。
               </li>
@@ -170,7 +178,7 @@
                 <i
                   class="fa-solid fa-circle-xmark fa-2xl"
                   style="color: #4f5346"
-                  onclick="closeAns2();"
+                  onclick="closeAns([q2],[a2, qt2]);"
                 ></i>
               </span>
             </div>
@@ -181,11 +189,15 @@
               id="q3"
               onmouseover="mouseOver(this)"
               onmouseout="mouseOut(this)"
-              onclick="showAns3();"
+              onclick="showAns([a3, qt3], [q3]);"
             >
               <li>如果參與這個訓練，會怎麼安排學習時間？</li>
             </div>
-            <div class="ques-title" id="q-t3" onclick="closeAns3();">
+            <div
+              class="ques-title"
+              id="q-t3"
+              onclick="closeAns([q3],[a3, qt3]);"
+            >
               <li>如果參與這個訓練，會怎麼安排學習時間？</li>
             </div>
             <div class="answer" id="a3">
@@ -223,7 +235,7 @@
                 <i
                   class="fa-solid fa-circle-xmark fa-2xl"
                   style="color: #4f5346"
-                  onclick="closeAns3();"
+                  onclick="closeAns([q3],[a3, qt3]);"
                 ></i>
               </span>
             </div>
@@ -234,11 +246,15 @@
               id="q4"
               onmouseover="mouseOver(this)"
               onmouseout="mouseOut(this)"
-              onclick="showAns4();"
+              onclick="showAns([a4, qt4], [q4]);"
             >
               <li>是否有想要加入的公司？為什麼想加入該公司？</li>
             </div>
-            <div class="ques-title" id="q-t4" onclick="closeAns4();">
+            <div
+              class="ques-title"
+              id="q-t4"
+              onclick="closeAns([q4],[a4, qt4]);"
+            >
               <li>是否有想要加入的公司？為什麼想加入該公司？</li>
             </div>
             <div class="answer" id="a4">
@@ -275,7 +291,7 @@
                 <i
                   class="fa-solid fa-circle-xmark fa-2xl"
                   style="color: #4f5346"
-                  onclick="closeAns4();"
+                  onclick="closeAns([q4],[a4, qt4]);"
                 ></i>
               </span>
             </div>
@@ -286,11 +302,15 @@
               id="q5"
               onmouseover="mouseOver(this)"
               onmouseout="mouseOut(this)"
-              onclick="showAns5();"
+              onclick="showAns([a5, qt5], [q5]);"
             >
               <li>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</li>
             </div>
-            <div class="ques-title" id="q-t5" onclick="closeAns5();">
+            <div
+              class="ques-title"
+              id="q-t5"
+              onclick="closeAns([q5],[a5, qt5]);"
+            >
               <li>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</li>
             </div>
             <div class="answer" id="a5">
@@ -328,7 +348,7 @@
                 <i
                   class="fa-solid fa-circle-xmark fa-2xl"
                   style="color: #4f5346"
-                  onclick="closeAns5();"
+                  onclick="closeAns([q5],[a5, qt5]);"
                 ></i>
               </span>
             </div>
@@ -339,11 +359,15 @@
               id="q6"
               onmouseover="mouseOver(this)"
               onmouseout="mouseOut(this)"
-              onclick="showAns6();"
+              onclick="showAns([a6, qt6], [q6]);"
             >
               <li>關於這份申請網頁，分享一個開發時的技術心得。</li>
             </div>
-            <div class="ques-title" id="q-t6" onclick="closeAns6();">
+            <div
+              class="ques-title"
+              id="q-t6"
+              onclick="closeAns([q6],[a6, qt6]);"
+            >
               <li>關於這份申請網頁，分享一個開發時的技術心得。</li>
             </div>
             <div class="answer" id="a6">
@@ -375,7 +399,7 @@
                 <i
                   class="fa-solid fa-circle-xmark fa-2xl"
                   style="color: #4f5346"
-                  onclick="closeAns6();"
+                  onclick="closeAns([q6],[a6, qt6]);"
                 ></i>
               </span>
             </div>
@@ -386,13 +410,17 @@
               id="q7"
               onmouseover="mouseOver(this)"
               onmouseout="mouseOut(this)"
-              onclick="showAns7();"
+              onclick="showAns([a7, qt7], [q7]);"
             >
               <li>
                 請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。
               </li>
             </div>
-            <div class="ques-title" id="q-t7" onclick="closeAns7();">
+            <div
+              class="ques-title"
+              id="q-t7"
+              onclick="closeAns([q7],[a7, qt7]);"
+            >
               <li>
                 請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。
               </li>
@@ -407,7 +435,7 @@
                 <i
                   class="fa-solid fa-circle-xmark fa-2xl"
                   style="color: #4f5346"
-                  onclick="closeAns7();"
+                  onclick="closeAns([q7],[a7, qt7]);"
                 ></i>
               </span>
             </div>
@@ -418,11 +446,15 @@
               id="q8"
               onmouseover="mouseOver(this)"
               onmouseout="mouseOut(this)"
-              onclick="showAns8();"
+              onclick="showAns([a8, qt8], [q8]);"
             >
               <li>其他想要對我們說的事情？</li>
             </div>
-            <div class="ques-title" id="q-t8" onclick="closeAns8();">
+            <div
+              class="ques-title"
+              id="q-t8"
+              onclick="closeAns([q8],[a8, qt8]);"
+            >
               <li>其他想要對我們說的事情？</li>
             </div>
             <div class="answer" id="a8">
@@ -450,7 +482,7 @@
                 <i
                   class="fa-solid fa-circle-xmark fa-2xl"
                   style="color: #4f5346"
-                  onclick="closeAns8();"
+                  onclick="closeAns([q8],[a8, qt8]);"
                 ></i>
               </span>
             </div>
